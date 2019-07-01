@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 function setData(data) {
     var cardNo = data.cardNo;
-    var paySum = data.paySum || 0;
+    var paySum = data.paySum || data.billSum || 0;
     var debitSum = data.debitSum;
     $("#card").text(cardNo);
     $("#price").text('¥ ' + paySum);
@@ -99,7 +99,7 @@ function setLinghuoFenqiData(callback) {
         if (response && response.data) {
             var data = response.data;
             setData(data);
-            callback(data);
+            callback && callback(data);
         }
     });
 }
