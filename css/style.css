@@ -208,3 +208,92 @@ a {
 .page .page-modal .page-modal-footer .btns .btn {
     margin-left: 10px;
 }
+
+.block-tip {
+    width: 248px;
+    height: 80px;
+    line-height: 80px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 12px 0px rgba(8, 9, 10, 0.2);
+    display: none;
+}
+
+.block-tip .block-tip-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: url(../images/duihao.png) 0 0 no-repeat;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+.block-tip .block-tip-text {
+    height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(8, 9, 10, 0.85);
+    vertical-align: middle;
+}
+
+.page .page-modal .page-modal-body .menu {
+    text-align: center;
+}
+
+.page .page-modal .page-modal-body .menu>li {
+    display: inline-block;
+    padding-top: 12px;
+    box-sizing: border-box;
+    width: 148px;
+    height: 129px;
+    border-radius: 8px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    margin-right: 32px;
+    vertical-align: middle;
+}
+
+.page .page-modal .page-modal-body .menu>li:last-child {
+    margin-right: 0;
+}
+
+.page .page-modal .page-modal-body .menu .menu-item-a {
+    display: block;
+}
+
+.page .page-modal .page-modal-body .menu .menu-item-price {
+    color: #242E33;
+    font-size: 20px;
+    margin-top: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 180px;
+}
+
+.page .page-modal .page-modal-body .menu .menu-item-text {
+    color: #8c9295;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.page .page-modal .page-modal-body .menu .menu-item-tip {
+    color: #8c9295;
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+.page .page-modal .page-modal-body .card {
+    margin:40px auto 20px;
+    width: 240px;
+    height: 148px;
+    line-height: 148px;
+    box-shadow: 0px 0px 16px 0px rgba(8, 23, 26, 0.04);
+    border-radius: 8px;
+    text-align: center;
+    background: url(../images/card.png) 0 0 no-repeat;
+}
+
+.page .page-modal .page-modal-body .card a {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}

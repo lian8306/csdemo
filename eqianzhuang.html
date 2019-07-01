@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>E钱庄信用卡</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<body class="page">
+    <div class="page-modal">
+        <div class="page-modal-header">
+            <span class="close"></span>
+            <div class="title">E钱庄信用卡</div>
+        </div>
+        <div class="page-modal-body">
+            <ul class="menu">
+                <li>
+                    <a class="menu-item-a" href="">
+                        <div class="menu-item-img">
+                            <img src="./images/bcs.png" />
+                        </div>
+                            <div class="menu-item-price" id="pay"></div>
+                            <div class="menu-item-tip">已出账单</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-item-a" href="">
+                        <div class="menu-item-img">
+                            <img src="./images/bcs.png" />
+                        </div>
+                            <div class="menu-item-price" id="debit"></div>
+                            <div class="menu-item-tip">未出账单</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-item-a" href="">
+                        <div class="menu-item-img">
+                            <img src="./images/bcs.png" />
+                        </div>
+                            <div class="menu-item-text">查看历史账单</div>
+                    </a>
+                </li>
+            </ul>
+            <div class="card">
+                <a href="">信用卡网申</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    getFenqiData().then(function(response) {
+        if (response && response.data) {
+            var data = response.data;
+            var paySum = data.paySum;
+            var debitSum = data.debitSum;
+            $("#pay").text("￥ " + paySum);
+            $("#debit").text("￥ " + debitSum);
+        }
+    });
+    </script>
+</body>
+
+</html>
